@@ -1,0 +1,12 @@
+<h1>bienvenue aux dans notre nouveau jeu</h1>
+
+
+<h2><%= @grid.join("")%></h2>
+
+
+<form action="/score">
+  <input type="text" name="jeu" placeholder="longuest word?">
+  <input type="hidden" name="grid" value="<%= @grid.join('') %>">
+  <input type="hidden" name="start_time" value="<%= @start_time%>">
+  <input type="submit" value="Go on!">
+</form>
